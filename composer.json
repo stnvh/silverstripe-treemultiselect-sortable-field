@@ -1,0 +1,38 @@
+{
+    "name": "a2nt/silverstripe-treemultiselect-sortable-field",
+    "description": "Sortable tree multiselect field",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "progressive",
+        "app"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Tony Air",
+            "email": "tony@twma.pro"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "silverstripe/cms": "^4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "extra": {
+        "installer-name": "silverstripe-treemultiselect-sortable-field",
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        },
+        "expose": [
+            "resources"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "A2nt\\TreeMultiselectFieldSortable\\": "src/"
+        }
+    }
+}
