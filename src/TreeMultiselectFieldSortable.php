@@ -20,6 +20,7 @@ use SilverStripe\ORM\DataObject;
 use SilverStripe\ORM\DB;
 use SilverStripe\Security\Group;
 use SilverStripe\View\ViewableData;
+use SilverStripe\View\Requirements;
 
 class TreeMultiselectFieldSortable extends TreeMultiselectField
 {
@@ -40,6 +41,14 @@ class TreeMultiselectFieldSortable extends TreeMultiselectField
 
         $this->addExtraClass('sortable');
         $this->sortField = $sortField;
+    }
+
+    public function Field($properties = [])
+    {
+        Requirements::css('a2nt/silverstripe-treemultiselect-sortable-field:client/dist/css/app.css');
+        Requirements::javascript('a2nt/silverstripe-treemultiselect-sortable-field:client/dist/js/app.js');
+
+        return parent::Field($properties);
     }
 
     public function getSchemaDataDefaults()

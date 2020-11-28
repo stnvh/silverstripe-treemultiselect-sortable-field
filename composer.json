@@ -27,7 +27,7 @@
             "dev-master": "2.x-dev"
         },
         "expose": [
-            "resources"
+            "client/dist"
         ]
     },
     "autoload": {
