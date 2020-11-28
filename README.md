@@ -1,3 +1,4 @@
+# silverstripe-treemultiselect-sortable-field
 # SilverStripe Tree Multi-select sortable field
 
 SilverStipe custom sort field on tree items
@@ -31,4 +32,3 @@ TreeMultiselectFieldSortable::create(
     SiteTree::class // relation objects class name
 )
 ```
-# silverstripe-treemultiselect-sortable-field
